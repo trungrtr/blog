@@ -5,7 +5,7 @@ const port = 3000 // chay web o cong nao
 
 // định nghĩa tuyến đường route(/....)
 app.get('/', (req, res) => {
-  res.send('Hello Worldddd!')
+  res.send('<h1>Hello World!</h1>')
 })
 app.use(morgan('combined'))
 app.listen(port, () => {
