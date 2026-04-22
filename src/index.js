@@ -5,9 +5,18 @@ const { engine } = require('express-handlebars')
 const app = express() // cha ve 1 doi tuong
 const port = 3000 // chay web o cong nao
 
-// dinh nghia tuyen duong route(/....)
 
+
+app.use(express.static(path.join(__dirname,'public')))
+
+
+
+// dinh nghia tuyen duong route(/....)
 app.use(morgan('combined'))
+
+
+
+
 
 // template engine
 app.engine('handlebars', engine())
